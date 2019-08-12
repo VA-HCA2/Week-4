@@ -7,6 +7,7 @@ window.onload= function(){
 function lookupId()
 {
     let idNum=document.getElementById("idNum");
+    //xhr This holds the Ajax request
     let xhr= new XMLHttpRequest;
 
     xhr.onreadystatechange=function(){
