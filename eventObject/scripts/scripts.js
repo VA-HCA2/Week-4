@@ -11,10 +11,5 @@ window.onload= function(){
         let count=50-Number(message);
         inputpara.innerHTML="Characters Left "+count;
    }
-   for ( let i=0; i<imgs.length;i++){
-       imgs[i].onmouseover=function(){
-           imgs.style.
-       }
-   }
-
+   
 }

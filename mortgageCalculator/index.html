@@ -38,7 +38,7 @@
             <div class="row">
                 <div class="col ">
                     <h1>Mortgage Calculator</h1>
-                    <form class="form-signin " autocomplete="off" method="GET" >
+                    <form id="formId" class="form-signin " autocomplete="off" method="GET" disabled="disabled" >
                         <div class="form-group">
                             <label for="intRate">Interest Rate %</label>
                             <input type="text" class="form-control" id="intRate" >
@@ -53,6 +53,7 @@
                         </div>
                         <button id="mortageBtn" type="button" class="btn btn-outline-primary">Calculate</button>
                         <button type="reset" class="btn btn-outline-danger">Reset</button>
+                    </form>
                         <!--- Result-->
                         <div class="form-group">
                             <label for="monthlyPayment">Monthly Payment </label>
@@ -62,7 +63,7 @@
                             <label for="totalCst">Total Cost </label>
                             <input type="text" class="form-control" id="totalCst">
                         </div>
-                    </form>
+                
                 </div>
             </div>
         </section>

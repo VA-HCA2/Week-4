@@ -2,6 +2,25 @@
 $(function(){
 
     $("#intRate").focus();
+
+    (function() {
+        $('form > input').keyup(function() {
+    
+            var empty = false;
+            $('form > input').each(function() {
+                if ($(this).val() =='') {
+                    empty = true;
+                }
+            });
+    
+            if (empty) {
+                $("#formId").attr('disabled', 'disabled'); 
+            } else {
+                $("#formId").removeAttr('disabled');
+            }
+        });
+    })()
+
     $("#mortageBtn").on("click",function(){
         
         let intRate=$("#intRate").val();
