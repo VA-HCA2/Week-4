@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
         <main class="row no-gutters">
@@ -19,46 +20,46 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="fName">Name</label>
-                                    <input type="text" class="form-control" id="fName" required>
+                                    <input type="text" class="form-control" id="fName" autocomplete="off"  required>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="addressInfo">Address</label>
-                                    <input type="text" class="form-control" id="addressInfo" required>
+                                    <input type="text" class="form-control" id="addressInfo" autocomplete="off"  required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-3 mb-3">
                                     <label for="cityInfo"> City </label>
-                                    <input type="text" class="form-control" id="city" required>
+                                    <input type="text" class="form-control" id="city" autocomplete="off" required>
                                 </div>
                                 <div class="col-md-3 mb-3">
                                     <label for="state"> State </label>
-                                    <input type="text" class="form-control" id="state" name="state">
+                                    <input type="text" class="form-control" id="state"autocomplete="off"  name="state">
                                 </div>
                                 <div class="col-md-3 mb-3">
                                         <label for="stateInfo"> Zip Code </label>
-                                        <input type="text" class="form-control" id="zipCode" required>
+                                        <input type="text" class="form-control" id="zipCode" autocomplete="off" required>
                                     </div>
                             </div>
 
                             <div class="row ">
-                                <label for="addressType"> Billing Address</label>
-                                <select class="custom-select d-block w-100" id="addressField" name="addressField">
-                                    <option value="" disabled selected>Please select...
-                                    <option value="billSameAddress"> Bill to Same Address</option>
-                                    <option value="billDiffAddress"> Bill to a different Address</option>
+                                <label for="addressSelector"> Billing Address</label>
+                                <select class="custom-select d-block w-100" id="addressSelector" >
+                                    <option value="Yes" selected> Same as Shipping Address</option>
+                                    <option value="No">Use different address</option>
                                 </select>
                             </div>
+
                             <hr class="mb-4">
-                            <div class="billingAddress row">
+                            <div id="billingAddress" class="billing">
                             <div class="col-md-6 mb-4">
                                 <label for="addressInfo">Address</label>
-                                <input type="text" class="form-control" id="addressInfo" required>
+                                <input type="text" class="form-control" id="addressInfo" >
                             </div>
                             <div class="row">
                                 <div class="col-md-3 mb-3">
                                     <label for="cityInfo"> City </label>
-                                    <input type="text" class="form-control" id="city" required>
+                                    <input type="text" class="form-control" id="city">
                                 </div>
                                 <div class="col-md-3">
                                     <label for="state"> State </label>
@@ -66,11 +67,11 @@
                                 </div>
                                 <div class="col-md-3 mb-3">
                                         <label for="stateInfo"> Zip Code </label>
-                                        <input type="text" class="form-control" id="zipCode" required>
+                                        <input type="text" class="form-control" id="zipCode">
                                     </div>
                             </div>
                             </div>
-                            <button id="totalPrice" class="btn btn btn-outline-primary" type="button">Submit</button>
+                            <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
                             <button type="reset" class="btn btn-outline-danger">Reset</button>  
                             </div>
                                 

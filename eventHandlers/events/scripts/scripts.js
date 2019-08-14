@@ -4,7 +4,7 @@ window.onload= function()
 {
     const allInputTextFields=document.querySelectorAll("input[type='text']");
     const stateField=document.getElementById("state");
-    const dropDownList=document.getElementsByClassName("billingAddress");
+    let addressField = document.getElementById("addressSelector");
     for (let i=0; i < allInputTextFields.length; i++)
     {
         allInputTextFields[i].onfocus=function(){
@@ -17,19 +17,16 @@ window.onload= function()
         stateField.oninput=function(){
         stateField.value=stateField.value.toUpperCase();
        };
-      dropDownList.onchange = function () 
+//Billing address hide div 
+      addressField.onchange = function () 
       {   
-          let selectedOption=dropDownList.value;
+        let billingForm = document.getElementById("billingAddress");
+                    if (addressSelector.selectedIndex == "1") {
 
-              if (selectedOption==dropDownList[i].value) {
-                    selectedOption[i].parentNode.style.display = "block";
-                    console.log("hello");
+                        billingForm.style.display = "block";
                 }
                 else {
-                    selectedOption[i].parentNode.style.display = "none";
+                    billingForm.style.display = "none";
                 }
           }
 }
-
-
- 
