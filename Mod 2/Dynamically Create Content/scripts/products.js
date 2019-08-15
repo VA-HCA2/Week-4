@@ -22,7 +22,7 @@ $(function() {
     for (let i = 0; i < objs.Items.length; i++) {
       if (categorySelection == objs.Items[i].CategoryName) {
     //Table Body
-        let str ="<tr><td>"+objs.Items[i].ProductID +"</td><td> <input readonly></input>"+objs.Items[i].ProductName +"</td><td>" +
+        let str ="<tr><td>"+objs.Items[i].ProductID +"</td><td>"+objs.Items[i].ProductName +"</td><td>" +
           "<a href=details.html?ProductId=" +objs.Items[i].ProductID +">Details<a>" +"</td></tr>";
         $("#productTable tbody").append(str);
         //End of body table

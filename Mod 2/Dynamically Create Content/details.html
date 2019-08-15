@@ -10,21 +10,32 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>Hello, world!</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
   <div class="container">
+    <form>
     <div class="row">
-      <div class="col">
-        <table id="detailsTable" class="table-bordered col-md-5 mb-3 ">
-        <h1>Product Details</h1>
-          <thead id="detailsHeader">
+      <div class="col mt-5 col-md-5 offset-md-3">
+          <h1 class="text-center">Product Details</h1>
+        <table id="detailsTable" class="table-bordered col-md-10 offset-md-1">
+          <thead>
           </thead>
-          <tbody id="detailsBody"> 
+          <tbody id="detailsTBody"> 
           </tbody>
         </table>
+
+    </div>
+    <div class="col-md-5 offset-md-3 mt-3 text-center">
+      <button id="editButton" type="button" class="btn btn-outline-secondary">Edit</button>
+    </div>
+    <div class="col-md-5 offset-md-3 mt-3 text-center" id="buttons">
+      <button id ="saveBtn" type="button" class="btn btn-outline-success">Save</button>
+      <button id ="cancelBtn" type="reset" class="btn btn-outline-danger">Cancel</button>
     </div>
     </div>
+    </form>
   </div>
 
   <!-- Optional JavaScript -->
